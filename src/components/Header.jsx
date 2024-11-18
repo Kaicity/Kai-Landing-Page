@@ -78,7 +78,7 @@ const Header = () => {
                 to={path}
                 spy={true}
                 smooth={true}
-                // offset={-100}
+                offset={-100}
                 className="block text-base text-gray-900 hover:font-semibold cursor-pointer"
               >
                 {link}
@@ -126,7 +126,7 @@ const Header = () => {
               to={path}
               spy={true}
               smooth={true}
-              // offset={-100}
+              offset={-100}
               className="block text-base text-white"
             >
               {link}
