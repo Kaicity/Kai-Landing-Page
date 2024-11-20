@@ -7,7 +7,7 @@ function StatisticItem({icon, value, label}) {
                  className="object-contain shrink-0 self-stretch my-auto w-12 aspect-square"/>
             <div className="flex overflow-hidden flex-col self-stretch my-auto w-[191px]">
                 <div className="text-3xl font-bold leading-none text-neutral-600">
-                    {<CountUp start={0} duration={2} end={value} separator=","/>}
+                    {<CountUp start={0} duration={3} end={value} separator=","/>}
                 </div>
                 <div className="text-base text-neutral-500">{label}</div>
             </div>
