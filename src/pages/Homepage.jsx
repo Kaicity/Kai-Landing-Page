@@ -11,12 +11,12 @@ import NewLetter from "../components/NewLetter";
 import Sale from "../components/Sale";
 import StatisticsSection from "../components/StatisticsSection";
 import TestimonialCard from "../components/TestimonialCard";
-
+import ProcessGrid from "../components/ProcessCard";
 function HomePage() {
     return (
         <div>
             <Home/>
-            <Community/>
+            <Community/>    
             <BlogCard
                 imageUrl={BlogCardImageOne}
                 title={
@@ -25,7 +25,7 @@ function HomePage() {
                         <span className="text-brandPrimary font-semibold">
               CHẤT LƯỢNG CAO
             </span>{" "}
-                    </>
+                    </>     
                 }
                 content={
                     <>
@@ -63,8 +63,11 @@ function HomePage() {
                 showBtn={false}
             ></BlogCard>
             <BlogWrapper/>
+            <ProcessGrid/>
             <TestimonialCard imageSrc={TestimonialCardOne}/>
+
             <NewLetter/>
+
         </div>
     );
 }

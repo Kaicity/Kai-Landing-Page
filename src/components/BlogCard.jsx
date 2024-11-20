@@ -8,7 +8,7 @@ const BlogCard = ({imageUrl, title, content, showBtn, btnContent}) => {
             className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8"
             id="blog-product"
         >
-            <div className="md:w-11/12 mx-auto flex flex-col md:flex-row md:justify-between items-center gap-12">
+            <div className="md:w-11v/12 mx-auto flex flex-col md:flex-row md:justify-between items-center gap-12">
                 <motion.div variants={fadeInFramer("up", 0)}
                             initial="hidden" whileInView="show" viewport={{once: true, amount: 0.5}}>
                     <img src={imageUrl} alt="" className="w-full"/>
