@@ -25,7 +25,7 @@ function HomePage() {
                         <span className="text-brandPrimary font-semibold">
               CHẤT LƯỢNG CAO
             </span>{" "}
-                    </>
+                    </>     
                 }
                 content={
                     <>
@@ -63,9 +63,11 @@ function HomePage() {
                 showBtn={false}
             ></BlogCard>
             <BlogWrapper/>
-            <TestimonialCard imageSrc={TestimonialCardOne}/>
-            <NewLetter/>
             <ProcessGrid/>
+            <TestimonialCard imageSrc={TestimonialCardOne}/>
+
+            <NewLetter/>
+
         </div>
     );
 }

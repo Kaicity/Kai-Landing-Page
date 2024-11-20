@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePage from "./pages/Homepage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ProductPage from "./pages/Productpage";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<></>} />
+        <Route path="/products" element={<ProductPage/>} />
         <Route path="/blog" element={<></>} />
         <Route path="/contact" element={<></>} />
 
