@@ -25,7 +25,7 @@ function HomePage() {
                         <span className="text-brandPrimary font-semibold">
               CHẤT LƯỢNG CAO
             </span>{" "}
-                    </>
+                    </>     
                 }
                 content={
                     <>

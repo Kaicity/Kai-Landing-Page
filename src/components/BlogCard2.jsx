@@ -6,18 +6,14 @@ import ex3 from "../assets/bw1.jpg";
 import ex4 from "../assets/process1.jfif";
 import ex5 from "../assets/process3.jfif";
 import ex6 from "../assets/process4.jfif";
-import { motion } from "framer-motion";
-import { fadeInFramer } from "../helper/fadeInFramer.js";
+import {motion} from "framer-motion";
+import {fadeInFramer} from "../helper/fadeInFramer.js";
 
-const BlogCard = ({ date, month, title, description, src }) => {
+const BlogCard = ({date, month, title, description, src}) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden  transition-transform transform hover:scale-105">
       <div className="relative">
-        <img
-          src={src}
-          alt="Blog"
-          className="w-full h-64 object-cover"
-        />
+        <img src={src} alt="Blog" className="w-full h-64 object-cover" />
         <div className="absolute top-3 left-3 bg-blue-600 text-white rounded-md px-3 py-2 shadow-md">
           <p className="text-sm font-bold">{date}</p>
           <p className="text-xs">{month}</p>
@@ -28,7 +24,9 @@ const BlogCard = ({ date, month, title, description, src }) => {
           <span className="mr-2"> 👷 Admin</span>
           <span>🔧 Comments(05)</span>
         </div>
-        <h3 className="text-xl font-semibold mb-2 hover:text-blue-500 transition-colors">{title}</h3>
+        <h3 className="text-xl font-semibold mb-2 hover:text-blue-500 transition-colors">
+          {title}
+        </h3>
         <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg mb-4 truncate whitespace-nowrap overflow-hidden">
           {description}
         </p>
@@ -90,19 +88,26 @@ const BlogList = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-8" id="blog-product">
+    <div
+      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-8"
+      id="blog-product"
+    >
       <motion.div
         className="text-center md:w-1/2 mx-auto"
         variants={fadeInFramer("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{once: true, amount: 0.5}}
       >
         <h2 className="text-4xl font-semibold text-neutralDGrey mb-4">
-          3 yếu tố cơ bản về máy xúc
+          Các Loại Máy Xúc.
         </h2>
         <p className="text-neutralGrey text-sm md:w-3/4 mb-8 mx-auto">
-          Máy xúc là một loại thiết bị cơ giới được sử dụng rộng rãi trong xây dựng và công trình để đào, di chuyển và xử lý vật liệu. Ngoài việc thực hiện các công việc đào bới, máy xúc còn có thể thực hiện nhiều nhiệm vụ khác nhờ vào tính linh hoạt và các phụ kiện kèm theo, như gầu xúc, gàu ngoạm, kìm, hay cuốc xúc.
+          Máy xúc là một loại thiết bị cơ giới được sử dụng rộng rãi trong xây
+          dựng và công trình để đào, di chuyển và xử lý vật liệu. Ngoài việc
+          thực hiện các công việc đào bới, máy xúc còn có thể thực hiện nhiều
+          nhiệm vụ khác nhờ vào tính linh hoạt và các phụ kiện kèm theo, như gầu
+          xúc, gàu ngoạm, kìm, hay cuốc xúc.
         </p>
       </motion.div>
 
