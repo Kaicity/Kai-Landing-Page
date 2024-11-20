@@ -47,12 +47,12 @@ const Header = () => {
 
   return (
     <header
-      className={`w-100 bg-white md:bg-transparent fixed top-0 right-0 left-0`}
+      className={`w-100 bg-white md:bg-transparent fixed top-0 right-0 left-0 z-150`}
     >
       <nav
         className={`py-4 lg:px-14 px-4 ${
           isSticky
-            ? "sticky top-0 left-0 right-0 border bg-white duration-300"
+            ? "sticky top-0 left-0 right-0 border bg-white duration-300 z-40"
             : ""
         }`}
       >

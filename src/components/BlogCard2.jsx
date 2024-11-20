@@ -6,6 +6,10 @@ import ex3 from "../assets/bw1.jpg";
 import ex4 from "../assets/process1.jfif";
 import ex5 from "../assets/process3.jfif";
 import ex6 from "../assets/process4.jfif";
+import ex7 from "../assets/banner_2.png";
+import ex8 from "../assets/banner_3.png";
+import ex9 from "../assets/bw2.png";
+
 import {motion} from "framer-motion";
 import {fadeInFramer} from "../helper/fadeInFramer.js";
 
@@ -20,10 +24,15 @@ const BlogCard = ({date, month, title, description, src}) => {
         </div>
       </div>
       <div className="p-6">
-        <div className="text-gray-700 text-sm flex items-center mb-2">
-          <span className="mr-2"> 👷 Admin</span>
-          <span>🔧 Comments(05)</span>
+        <div className="text-gray-700 text-sm flex items-center mb-4 gap-4">
+          <span className="truncate text-xs sm:text-sm md:text-base lg:text-lg">
+            👷 Admin
+          </span>
+          <span className="truncate text-xs sm:text-sm md:text-base lg:text-lg">
+            🔧 Comments
+          </span>
         </div>
+
         <h3 className="text-xl font-semibold mb-2 hover:text-blue-500 transition-colors">
           {title}
         </h3>
@@ -85,11 +94,35 @@ const BlogList = () => {
       description:
         "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
     },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
   ];
 
   return (
     <div
-      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-8"
+      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-48 "
       id="blog-product"
     >
       <motion.div
