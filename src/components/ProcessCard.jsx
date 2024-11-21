@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import coding from "../assets/bw3.png";
 import immersive from "../assets/process4.jfif";
 import startup from "../assets/bw1.jpg";
-import { motion } from "framer-motion";
-import { fadeInFramer } from "../helper/fadeInFramer.js";
+import {motion} from "framer-motion";
+import {fadeInFramer} from "../helper/fadeInFramer.js";
 
-function ProcessCard({ number, title, description, background }) {
+function ProcessCard({number, title, description, background}) {
   const [isHovered, setIsHovered] = useState(false); // State to manage hover
 
   return (
@@ -25,7 +25,7 @@ function ProcessCard({ number, title, description, background }) {
       variants={fadeInFramer("up", 0.2)} // Apply fade-in animation when card comes into view
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{once: true, amount: 0.5}}
     >
       <div
         className={`text-4xl sm:text-5xl md:text-6xl font-bold ${
@@ -38,7 +38,7 @@ function ProcessCard({ number, title, description, background }) {
         className={`text-base sm:text-lg md:text-xl font-bold font-semibold mt-4 ${
           isHovered ? "text-white opacity-100" : "text-white"
         }`}
-        style={{ textAlign: "justify" }}
+        style={{textAlign: "justify"}}
       >
         {title}
       </h3>
@@ -46,7 +46,7 @@ function ProcessCard({ number, title, description, background }) {
         className={`text-xs sm:text-sm md:text-base mt-2 ${
           isHovered ? "text-white opacity-100" : "text-white"
         }`}
-        style={{ textAlign: "justify" }}
+        style={{textAlign: "justify"}}
       >
         {description}
       </p>
@@ -66,7 +66,7 @@ export default function ProcessGrid() {
         variants={fadeInFramer("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{once: true, amount: 0.5}}
       >
         <h2 className="text-4xl font-semibold text-neutralDGrey mb-4">
           3 yếu tố cơ bản về máy xúc
