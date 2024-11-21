@@ -15,10 +15,10 @@ import {fadeInFramer} from "../helper/fadeInFramer.js";
 
 const BlogCard = ({date, month, title, description, src}) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden  transition-transform transform hover:scale-105">
-      <div className="relative">
-        <img src={src} alt="Blog" className="w-full h-64 object-cover" />
-        <div className="absolute top-3 left-3 bg-blue-600 text-white rounded-md px-3 py-2 shadow-md">
+<div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all h-auto">
+<div className="relative">
+      <img src={src} className="w-full h-40 sm:h-32 md:h-48 lg:h-112 object-cover" alt="Example" />
+      <div className="absolute top-3 left-3 bg-blue-600 text-white rounded-md px-3 py-2 shadow-md">
           <p className="text-sm font-bold">{date}</p>
           <p className="text-xs">{month}</p>
         </div>
@@ -33,7 +33,7 @@ const BlogCard = ({date, month, title, description, src}) => {
           </span>
         </div>
 
-        <h3 className="text-xl font-semibold mb-2 hover:text-blue-500 transition-colors">
+        <h3 className="text-x font-semibold mb-2 hover:text-blue-500 transition-colors">
           {title}
         </h3>
         <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg mb-4 truncate whitespace-nowrap overflow-hidden">
@@ -144,8 +144,8 @@ const BlogList = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 p-6">
-        {blogPosts.map((post, index) => (
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 w-full">
+      {blogPosts.map((post, index) => (
           <BlogCard
             key={index}
             src={post.src}
