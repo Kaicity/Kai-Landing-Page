@@ -15,25 +15,20 @@ import {fadeInFramer} from "../helper/fadeInFramer.js";
 
 const BlogCard = ({date, month, title, description, src}) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden  transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all duration-100 md:h-112 h-autp">
       <div className="relative">
-        <img src={src} alt="Blog" className="w-full h-64 object-cover" />
-        <div className="absolute top-3 left-3 bg-blue-600 text-white rounded-md px-3 py-2 shadow-md">
-          <p className="text-sm font-bold">{date}</p>
+        <img
+          src={src}
+          className="w-full h-24 sm:h-32 md:h-64 lg:h-112 object-cover"
+          alt="Example"
+        />
+        <div className="absolute top-2 left-2 bg-blue-600 text-white rounded-md px-1 py-1 sm:px-3 sm:py-2 shadow-md">
+          <p className="text-xs font-bold">{date}</p>
           <p className="text-xs">{month}</p>
         </div>
       </div>
-      <div className="p-6">
-        <div className="text-gray-700 text-sm flex items-center mb-4 gap-4">
-          <span className="truncate text-xs sm:text-sm md:text-base lg:text-lg">
-            👷 Admin
-          </span>
-          <span className="truncate text-xs sm:text-sm md:text-base lg:text-lg">
-            🔧 Comments
-          </span>
-        </div>
-
-        <h3 className="text-xl font-semibold mb-2 hover:text-blue-500 transition-colors">
+      <div className="p-4">
+        <h3 className="text-xs lg:text-lg font-semibold mb-2 hover:text-blue-500 transition-colors">
           {title}
         </h3>
         <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg mb-4 truncate whitespace-nowrap overflow-hidden">
@@ -118,12 +113,132 @@ const BlogList = () => {
       description:
         "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
     },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
+    {
+      src: ex7,
+      date: "30",
+      month: "May",
+      title: "Máy xúc Hitachi ZX200-5G",
+      description:
+        "Máy xúc bánh xích hạng trung, thiết kế bền bỉ với công nghệ thủy lực tiên tiến, giúp tăng hiệu suất và tiết kiệm nhiên liệu. Phù hợp cho công trình xây dựng, san lấp mặt bằng hoặc khai thác mỏ.",
+    },
+    {
+      src: ex8,
+      date: "25",
+      month: "Sep",
+      title: "Máy xúc Doosan DX140W-7",
+      description:
+        "Máy xúc bánh lốp với động cơ mạnh mẽ, thiết kế thân thiện với môi trường. Hệ thống kiểm soát tự động giúp nâng cao hiệu suất làm việc. Lý tưởng cho công trình trong đô thị và vùng nông thôn.",
+    },
+    {
+      src: ex9,
+      date: "10",
+      month: "Aug",
+      title: "Máy xúc Volvo EC750E",
+      description:
+        "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
+    },
   ];
 
   return (
     <div
-      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-48 "
-      id="blog-product"
+      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-24 "
+      id="products"
     >
       <motion.div
         className="text-center md:w-1/2 mx-auto"
@@ -135,16 +250,9 @@ const BlogList = () => {
         <h2 className="text-4xl font-semibold text-neutralDGrey mb-4">
           Các Loại Máy Xúc.
         </h2>
-        <p className="text-neutralGrey text-sm md:w-3/4 mb-8 mx-auto">
-          Máy xúc là một loại thiết bị cơ giới được sử dụng rộng rãi trong xây
-          dựng và công trình để đào, di chuyển và xử lý vật liệu. Ngoài việc
-          thực hiện các công việc đào bới, máy xúc còn có thể thực hiện nhiều
-          nhiệm vụ khác nhờ vào tính linh hoạt và các phụ kiện kèm theo, như gầu
-          xúc, gàu ngoạm, kìm, hay cuốc xúc.
-        </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 p-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 w-full">
         {blogPosts.map((post, index) => (
           <BlogCard
             key={index}
