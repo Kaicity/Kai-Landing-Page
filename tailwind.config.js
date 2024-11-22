@@ -6,9 +6,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
     extend: {
-      height: {
-        '70': '17.5rem', // 70 x 0.25rem = 17.5rem (tương đương với 280px)
-      },
       colors: {
         neutralSilver: "#F5F7FA",
         neutralDGrey: "#4D4D4D",
