@@ -15,10 +15,14 @@ import {fadeInFramer} from "../helper/fadeInFramer.js";
 
 const BlogCard = ({date, month, title, description, src}) => {
   return (
-<div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all duration-100 md:h-112 h-autp">
-<div className="relative">
-      <img src={src} className="w-full h-24 sm:h-32 md:h-64 lg:h-112 object-cover" alt="Example" />
-      <div className="absolute top-2 left-2 bg-blue-600 text-white rounded-md px-1 py-1 sm:px-3 sm:py-2 shadow-md">
+    <div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all duration-100 md:h-112 h-autp">
+      <div className="relative">
+        <img
+          src={src}
+          className="w-full h-24 sm:h-32 md:h-64 lg:h-112 object-cover"
+          alt="Example"
+        />
+        <div className="absolute top-2 left-2 bg-blue-600 text-white rounded-md px-1 py-1 sm:px-3 sm:py-2 shadow-md">
           <p className="text-xs font-bold">{date}</p>
           <p className="text-xs">{month}</p>
         </div>
@@ -205,7 +209,7 @@ const BlogList = () => {
       description:
         "Máy xúc bánh xích cỡ lớn, được thiết kế cho các công trình khai thác nặng hoặc xây dựng cơ sở hạ tầng lớn. Động cơ mạnh, hệ thống thủy lực tối ưu và cabin hiện đại.",
     },
-     {
+    {
       src: ex7,
       date: "30",
       month: "May",
@@ -249,7 +253,7 @@ const BlogList = () => {
       </motion.div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 w-full">
-      {blogPosts.map((post, index) => (
+        {blogPosts.map((post, index) => (
           <BlogCard
             key={index}
             src={post.src}

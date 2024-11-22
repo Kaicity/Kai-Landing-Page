@@ -9,7 +9,6 @@ function ProductPage() {
   return (
     <view>
       <Breadcrumbs />
-
       <BlogList />
       <br />
       <NewLetter />
