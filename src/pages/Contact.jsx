@@ -11,7 +11,7 @@ function Contact() {
     <div>
       <Breadcrumbs />
       <div className="px-2 lg:px-14 flex items-center justify-center mb-12">
-        <div className="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="container mx-auto p-5 grid lg:grid-cols-1 xl:grid-cols-2 gap-10">
           {/* Form Section */}
           <div className="px-4 lg:px-16">
             {/* Contact Info Section */}
@@ -79,14 +79,13 @@ function Contact() {
           </div>
 
           {/* Google Map Section */}
-          <div className="rounded overflow-hidden shadow-md">
+          <div className="relative w-full h-0 overflow-hidden shadow-md pb-[80.25%]">
             <iframe
-              title="Google Map"
-              className="w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31355.759382941134!2d106.67803105129691!3d10.77527517902712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2sDistrict%201%2C%20Ho%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1732347136490!5m2!1sen!2s"
-              style={{ border: 0 }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15679.395286557141!2d106.62769921122445!3d10.746132411895305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e7cff633fdd%3A0x85ee85db9cb263ba!2zUXXhuq1uIDYsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1732378072940!5m2!1svi!2s"
+              className="absolute top-0 left-0 w-full h-full"
               allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
