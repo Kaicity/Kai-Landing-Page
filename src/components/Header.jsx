@@ -1,17 +1,29 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-scroll";
+import {Link} from "react-scroll";
+import {Link as RouterLink, useNavigate} from "react-router-dom"; // import đúng từ react-router-dom
 
 // React icons
-import { FaXmark, FaBars } from "react-icons/fa6";
+import {FaXmark, FaBars} from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const navigate = useNavigate();
 
   //set toggle menu open and close
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const handleLinkClick = (link, path) => {
+    console.log(`Đã bấm vào đường link: ${link}, đường dẫn: ${path}`);
+    // Chuyển hướng đến trang sản phẩm mà không reload lại trang
+    if (path === "/products") {
+      navigate(path); // Dùng react-router navigate để không reload trang
+    }
+    if (path === "home") {
+      navigate("/");
+    }
   };
 
   console.log(isMenuOpen);
@@ -36,13 +48,13 @@ const Header = () => {
 
   //NavItem array cac muc route page
   const navItems = [
-    { link: "Trang chủ", path: "home" },
-    { link: "Cộng đồng", path: "community" },
-    { link: "Sản phẩm", path: "blog-product" },
-    { link: "Giới thiệu", path: "sale" },
-    { link: "Đánh giá", path: "rating" },
-    { link: "Bài viết", path: "blog" },
-    { link: "Công ty", path: "company" },
+    {link: "Trang chủ", path: "home"},
+    {link: "Cộng đồng", path: "community"},
+    {link: "Sản phẩm", path: "/products"},
+    {link: "Giới thiệu", path: "sale"},
+    {link: "Đánh giá", path: "rating"},
+    {link: "Bài viết", path: "blog"},
+    {link: "Công ty", path: "company"},
   ];
 
   return (
@@ -72,7 +84,7 @@ const Header = () => {
 
           {/* navitem nay danh man hinh kich co lon */}
           <ul className="md:flex space-x-12 hidden">
-            {navItems.map(({ link, path }) => (
+            {navItems.map(({link, path}) => (
               <Link
                 key={path}
                 to={path}
@@ -80,6 +92,7 @@ const Header = () => {
                 smooth={true}
                 offset={-100}
                 className="block text-base text-gray-900 hover:font-semibold cursor-pointer"
+                onClick={() => handleLinkClick(link, path)}
               >
                 {link}
               </Link>
@@ -120,7 +133,7 @@ const Header = () => {
             isMenuOpen ? "block fixed top-3 right-0 left-0" : "hidden"
           }`}
         >
-          {navItems.map(({ link, path }) => (
+          {navItems.map(({link, path}) => (
             <Link
               key={path}
               to={path}
@@ -128,6 +141,7 @@ const Header = () => {
               smooth={true}
               offset={-100}
               className="block text-base text-white"
+              onClick={() => handleLinkClick(link, path)}
             >
               {link}
             </Link>

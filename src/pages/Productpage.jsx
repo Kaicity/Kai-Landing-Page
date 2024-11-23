@@ -1,14 +1,19 @@
+import React from "react";
+import Breadcrumb from "../components/breadcrumb";
 import BlogList from "../components/BlogCard2";
-import Home from "../components/Home";
 import NewLetter from "../components/NewLetter";
+import BreadcrumbComponent from "../components/breadcrumb";
+import Breadcrumbs from "../components/breadcrumb";
 
 function ProductPage() {
   return (
-    <div>
+    <view>
+      <Breadcrumbs />
       <BlogList />
-      <br></br>
+      <br />
       <NewLetter />
-    </div>
+    </view>
   );
 }
+
 export default ProductPage;
