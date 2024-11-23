@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
-import Breadcrumbs from "../components/breadcrumb";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function Contact() {
   useEffect(() => {
