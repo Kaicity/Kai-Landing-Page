@@ -1,16 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import coding from "../assets/bw3.png";
 import immersive from "../assets/process4.jfif";
 import startup from "../assets/bw1.jpg";
-import {motion} from "framer-motion";
-import {fadeInFramer} from "../helper/fadeInFramer.js";
+import { motion } from "framer-motion";
+import { fadeInFramer } from "../helper/fadeInFramer.js";
 
-function ProcessCard({number, title, description, background}) {
+function ProcessCard({ number, title, description, background }) {
   const [isHovered, setIsHovered] = useState(false); // State to manage hover
 
   return (
     <motion.div
-      className="flex flex-col items-start justify-start p-4 sm:p-6 md:p-8 rounded-lg shadow-lg bg-gray-300 hover:bg-gray-200 transition-all transform hover:scale-105"
+      className="flex flex-col items-start justify-start p-4 sm:p-6 md:p-8  shadow-lg bg-gray-300 hover:bg-gray-200 transition-all transform hover:scale-105"
       style={{
         backgroundImage: background ? `url(${background})` : "",
         width: "100%", // Full width by default
@@ -25,7 +25,7 @@ function ProcessCard({number, title, description, background}) {
       variants={fadeInFramer("up", 0.2)} // Apply fade-in animation when card comes into view
       initial="hidden"
       whileInView="show"
-      viewport={{once: true, amount: 0.5}}
+      viewport={{ once: true, amount: 0.5 }}
     >
       <div
         className={`text-4xl sm:text-5xl md:text-6xl font-bold ${
@@ -38,7 +38,7 @@ function ProcessCard({number, title, description, background}) {
         className={`text-base sm:text-lg md:text-xl font-bold font-semibold mt-4 ${
           isHovered ? "text-white opacity-100" : "text-white"
         }`}
-        style={{textAlign: "justify"}}
+        style={{ textAlign: "justify" }}
       >
         {title}
       </h3>
@@ -46,7 +46,7 @@ function ProcessCard({number, title, description, background}) {
         className={`text-xs sm:text-sm md:text-base mt-2 ${
           isHovered ? "text-white opacity-100" : "text-white"
         }`}
-        style={{textAlign: "justify"}}
+        style={{ textAlign: "justify" }}
       >
         {description}
       </p>
@@ -57,7 +57,7 @@ function ProcessCard({number, title, description, background}) {
 export default function ProcessGrid() {
   return (
     <div
-      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-8"
+      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto py-16"
       id="blog-product"
     >
       {/* Title with question */}
@@ -66,17 +66,14 @@ export default function ProcessGrid() {
         variants={fadeInFramer("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true, amount: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <h2 className="text-4xl font-semibold text-neutralDGrey mb-4">
           3 yếu tố cơ bản về máy xúc
         </h2>
         <p className="text-neutralGrey text-sm md:w-3/4 mb-8 mx-auto">
           Máy xúc là một loại thiết bị cơ giới được sử dụng rộng rãi trong xây
-          dựng và công trình để đào, di chuyển và xử lý vật liệu. Ngoài việc
-          thực hiện các công việc đào bới, máy xúc còn có thể thực hiện nhiều
-          nhiệm vụ khác nhờ vào tính linh hoạt và các phụ kiện kèm theo, như gầu
-          xúc, gàu ngoạm, kìm, hay cuốc xúc
+          dựng
         </p>
       </motion.div>
 

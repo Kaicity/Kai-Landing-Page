@@ -1,14 +1,15 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import {Link} from "react-scroll";
-import {Link as RouterLink, useNavigate} from "react-router-dom"; // import đúng từ react-router-dom
+import { Link } from "react-scroll";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 // React icons
-import {FaXmark, FaBars} from "react-icons/fa6";
+import { FaXmark, FaBars } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
   const navigate = useNavigate();
 
   //set toggle menu open and close
@@ -37,10 +38,8 @@ const Header = () => {
       }
     };
 
-    // Thêm sự kiện scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup để gỡ bỏ sự kiện khi component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -48,13 +47,12 @@ const Header = () => {
 
   //NavItem array cac muc route page
   const navItems = [
-    {link: "Trang chủ", path: "home"},
-    {link: "Cộng đồng", path: "community"},
-    {link: "Sản phẩm", path: "/products"},
-    {link: "Giới thiệu", path: "sale"},
-    {link: "Đánh giá", path: "rating"},
-    {link: "Bài viết", path: "blog"},
-    {link: "Công ty", path: "company"},
+    { link: "Trang chủ", path: "home" },
+    { link: "Cộng đồng", path: "community" },
+    { link: "Đánh giá", path: "rating" },
+    { link: "Sản phẩm", path: "/products" },
+    { link: "Giới thiệu", path: "sale" },
+    { link: "Bài viết", path: "blog" },
   ];
 
   return (
@@ -68,9 +66,9 @@ const Header = () => {
             : ""
         }`}
       >
-        <div className="flex items-center justify-between text-base gap-8">
-          <a
-            href=""
+        <div className="flex items-center justify-between text-base gap-6">
+          <a 
+            href="/"
             className="text-2xl font-semibold flex items-center space-x-3"
           >
             <img
@@ -79,12 +77,11 @@ const Header = () => {
               className="object-contain shrink-0 self-stretch my-auto aspect-[1.43] w-[43px]"
               alt="Company logo"
             />
-            <h4 className="text-neutralDGrey">Thongular</h4>
           </a>
 
           {/* navitem nay danh man hinh kich co lon */}
-          <ul className="md:flex space-x-12 hidden">
-            {navItems.map(({link, path}) => (
+          <ul className="md:flex space-x-12 mx-auto hidden">
+            {navItems.map(({ link, path }) => (
               <Link
                 key={path}
                 to={path}
@@ -98,19 +95,6 @@ const Header = () => {
               </Link>
             ))}
           </ul>
-
-          {/* Button cho man hinh kich co lon */}
-          <div className="space-x-12 lg:flex items-center hidden">
-            <a
-              href="/"
-              className="lg:flex text-brandPrimary hover:text-gray-900"
-            >
-              Đăng nhập
-            </a>
-            <button className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey">
-              Đăng ký
-            </button>
-          </div>
 
           {/*Menu cho mobile  */}
           <div className="md:hidden">
@@ -133,14 +117,14 @@ const Header = () => {
             isMenuOpen ? "block fixed top-3 right-0 left-0" : "hidden"
           }`}
         >
-          {navItems.map(({link, path}) => (
+          {navItems.map(({ link, path }) => (
             <Link
               key={path}
               to={path}
               spy={true}
               smooth={true}
               offset={-100}
-              className="block text-base text-white"
+              className="block text-base text-white cursor-pointer hover:text-neutralDGrey"
               onClick={() => handleLinkClick(link, path)}
             >
               {link}

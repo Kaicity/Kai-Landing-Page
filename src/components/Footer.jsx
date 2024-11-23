@@ -16,7 +16,6 @@ const Footer = () => {
     { text: "Chính sách an toàn", href: "#" },
     { text: "Hoạt động", href: "#" },
   ];
-  
 
   const icons = [
     {
@@ -126,66 +125,24 @@ const Footer = () => {
 
         <div className="flex overflow-hidden flex-col min-w-[240px] w-[500px]">
           <h2 className="text-xl font-semibold leading-snug text-white">
-            Thông tin liên hệ
+            Nhận thông tin mới
           </h2>
-
-          <form className="flex flex-col mt-6 w-full text-sm leading-none text-gray-300 max-w-[500px] gap-4">
-            {/* Input Name và Email trên cùng một dòng */}
-            <div className="flex gap-4">
-              {/* Input Name */}
-              <div className="flex flex-col gap-1 flex-1">
-                <label
-                  htmlFor="nameInput"
-                  className="text-gray-400 text-sm font-medium"
-                >
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="nameInput"
-                  placeholder="Nhập họ tên đầy đủ"
-                  className="w-full px-3 py-2 rounded-lg bg-white bg-opacity-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              {/* Input Email */}
-              <div className="flex flex-col gap-1 flex-1">
-                <label
-                  htmlFor="emailInput"
-                  className="text-gray-400 text-sm font-medium"
-                >
-                  Email của bạn
-                </label>
-                <input
-                  type="email"
-                  id="emailInput"
-                  placeholder="Nhập email"
-                  className="w-full px-3 py-2 rounded-lg bg-white bg-opacity-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-            </div>
-
-            {/* Input Address nằm riêng bên dưới */}
-            <div className="flex flex-col gap-1">
-              <label
-                htmlFor="addressInput"
-                className="text-gray-400 text-sm font-medium"
-              >
-                Địa chỉ
-              </label>
-              <textarea
-                id="addressInput"
-                placeholder="Địa chỉ của bạn"
-                className="w-full px-3 py-2 h-24 rounded-lg bg-white bg-opacity-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <form
+            className="flex mt-6 w-full max-w-[500px] gap-4"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <div className="flex flex-col flex-1">
+   
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Nhập email của bạn"
+                className="w-full px-3 py-2 rounded-lg bg-white bg-opacity-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
             </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="bg-brandPrimary text-white rounded-lg px-4 py-2 text-sm font-medium hover:bg-neutralDGrey transition"
-            >
-              Gửi thông tin
+            <button className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey">
+              Đăng Ký
             </button>
           </form>
         </div>

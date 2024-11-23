@@ -13,7 +13,7 @@ import {fadeInFramer} from "../helper/fadeInFramer.js";
 
 function TestimonialCard() {
     return (
-        <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16" id="company">
+        <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16">
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                 <motion.div className="md:w-1/3" variants={fadeInFramer("up", 0)} initial="hidden"
                             whileInView="show" viewport={{once: true, amount: 0.5}}>
