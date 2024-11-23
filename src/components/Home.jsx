@@ -9,8 +9,8 @@ const Home = () => {
     <div className="bg-neutralSilver" id="home">
       <div className="px-4 lg:px-14 w-full mx-auto min-h-full h-screen">
         <Carousel
-          className="w-full mx-auto"
-          indicators={true}
+          className="w-full mx-auto "
+          indicators={false}
           leftControl={
             <a
               className="bg-neutral-300 text-white p-2 rounded-full hover:bg-brandPrimary transition-all duration-300"

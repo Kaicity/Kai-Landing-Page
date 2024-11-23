@@ -55,7 +55,7 @@ function SharingContact() {
       <ul className="space-y-4">
         <li>
           <a
-            href="tel:0383300680"
+            href="tel:0703338458"
             rel="nofollow"
             className="group flex flex-col items-center"
           >
@@ -69,7 +69,7 @@ function SharingContact() {
         
         <li>
           <a
-            href="https://zalo.me/0383300680"
+            href="https://zalo.me/0703338458"
             target="_blank"
             rel="nofollow"
             className="group flex flex-col items-center"
