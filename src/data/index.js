@@ -1,4 +1,5 @@
 import { PartnerShip, Reliable, Tolerance } from "../assets";
+import {Ex4} from "../assets/";
 
 //=========================COMMUNITY===========================
 export const membershipData = [
@@ -72,31 +73,25 @@ export const excavators = [
   {
     name: "Máy xúc bánh xích",
     description:
-      "Máy xúc bánh xích: Máy xúc được công nhận phổ biến nhất được sử dụng để khai thác, đào rãnh và phân loại cảnh quan. Máy xúc bánh xích là những gì hầu hết mọi người hình dung khi họ nghe đến từ “máy xúc”. Loại máy xúc này có sẵn trên bánh xe thay vì đường ray.",
+      "Máy xúc bánh xích là một trong những loại máy xúc được sử dụng phổ biến nhất trong các công trình xây dựng và khai thác. Được thiết kế với hệ thống bánh xích, máy xúc này có khả năng di chuyển linh hoạt trên các địa hình khó khăn, từ bùn lầy đến các bề mặt gồ ghề. Với cánh tay xúc mạnh mẽ và đa năng, nó thường được dùng cho các công việc như khai thác, đào móng, đào rãnh, phá dỡ công trình và phân loại cảnh quan. Đây là loại máy xúc điển hình mà hầu hết mọi người hình dung khi nhắc đến 'máy xúc'. Một số phiên bản có thể được trang bị bánh xe thay vì bánh xích để tăng tính cơ động trên bề mặt cứng và mịn hơn.",
+    image: Ex4,
   },
   {
     name: "Máy xúc Dragline",
     description:
-      "Máy xúc Dragline : Một loại máy xúc lớn hơn sử dụng hệ thống dây nâng và dây kéo để dọn đất cho các dự án dưới nước, đóng cọc hoặc đào đường.",
+      "Máy xúc Dragline là một loại máy xúc cỡ lớn chuyên dụng, thường được sử dụng trong các dự án quy mô lớn như khai thác mỏ lộ thiên, xây dựng hồ chứa hoặc các dự án đào đắp dưới nước. Máy sử dụng hệ thống dây nâng và dây kéo để điều khiển gầu xúc, cho phép di chuyển lượng lớn vật liệu một cách hiệu quả. Đặc biệt phù hợp với các công việc như đào đường, đóng cọc, hoặc xây dựng đê bao, máy xúc Dragline có thể hoạt động trong môi trường khắc nghiệt mà các loại máy xúc khác không thể đáp ứng.",
+    image: Ex4,
   },
   {
     name: "Máy đào hút",
     description:
-      "Máy đào hút: Sử dụng các tia nước và máy hút áp suất cao để làm sạch bụi bẩn, đất và các mảnh vụn. Được vận hành trên xe có bánh, máy xúc hút được sử dụng cho các ứng dụng dưới lòng đất, dọn sạch mảnh vỡ và các dự án đào tinh vi khác",
+      "Máy đào hút, hay còn gọi là máy hút chân không công suất cao, là loại máy xúc sử dụng kết hợp giữa tia nước áp suất cao và hệ thống hút mạnh để làm sạch đất, bụi bẩn và các mảnh vụn từ các khu vực phức tạp. Loại máy này thường được gắn trên xe bánh, giúp dễ dàng di chuyển và vận hành trong các dự án đào ngầm hoặc tại những vị trí yêu cầu độ chính xác cao. Nó được ứng dụng rộng rãi trong việc xử lý các công trình ngầm, làm sạch mảnh vỡ sau tai nạn hoặc thực hiện các dự án kỹ thuật phức tạp như lắp đặt ống ngầm.",
+    image: Ex4,
   },
   {
     name: "Máy xúc tầm xa",
     description:
-      "Máy xúc tầm xa: Với cánh tay kéo dài lên đến 100 feet cùng với các phụ kiện, máy xúc rất phù hợp cho các dự án đào công nghiệp và đào hạng nặng",
-  },
-  {
-    name: "Máy xúc mini",
-    description:
-      "Là phiên bản nhỏ gọn, nhỏ hơn của máy xúc bánh xích, máy xúc mini – thường được gọi là máy đào mini – rất hữu ích trong các công việc hẹp, công việc có chướng ngại vật và các công việc có địa hình mỏng manh như cảnh quan. Máy xúc mini có khả năng không cánh đuôi và lý tưởng cho các công việc nhỏ",
-  },
-  {
-    name: "Máy xúc bánh lốp",
-    description:
-      "Máy xúc bánh lốp cũng giống như máy xúc thông thường nhưng được lắp bánh xe thay vì bánh xích. Ngày càng được công nhận cho việc sử dụng chúng trong các dự án thành phố , máy xúc bánh lốp ngày càng trở nên phổ biến hơn",
+      "Máy xúc tầm xa được thiết kế đặc biệt với cánh tay kéo dài lên đến 100 feet (hơn 30 mét), cho phép nó tiếp cận và xử lý các khu vực xa hoặc cao mà các loại máy xúc thông thường không thể với tới. Đây là lựa chọn lý tưởng cho các dự án công nghiệp quy mô lớn như phá dỡ công trình cao tầng, đào các hố sâu hoặc xử lý vật liệu nặng trong các khu vực khó tiếp cận. Máy xúc tầm xa có thể được trang bị nhiều loại phụ kiện khác nhau, giúp tăng tính linh hoạt và đáp ứng nhu cầu của nhiều loại công việc khác nhau.",
+    image: Ex4,
   },
 ];

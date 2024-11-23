@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-scroll";
-import { Link as RouterLink, useNavigate } from "react-router-dom"; // import đúng từ react-router-dom
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 // React icons
 import { FaXmark, FaBars } from "react-icons/fa6";
@@ -9,7 +9,6 @@ import { FaXmark, FaBars } from "react-icons/fa6";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [language, setLanguage] = useState("vi");
 
   const navigate = useNavigate();
 
@@ -39,10 +38,8 @@ const Header = () => {
       }
     };
 
-    // Thêm sự kiện scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup để gỡ bỏ sự kiện khi component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -52,15 +49,11 @@ const Header = () => {
   const navItems = [
     { link: "Trang chủ", path: "home" },
     { link: "Cộng đồng", path: "community" },
-        { link: "Đánh giá", path: "rating" },
+    { link: "Đánh giá", path: "rating" },
     { link: "Sản phẩm", path: "/products" },
     { link: "Giới thiệu", path: "sale" },
     { link: "Bài viết", path: "blog" },
   ];
-
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "vi" ? "en" : "vi"));
-  };
 
   return (
     <header
@@ -74,8 +67,8 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center justify-between text-base gap-6">
-          <a
-            href=""
+          <a 
+            href="/"
             className="text-2xl font-semibold flex items-center space-x-3"
           >
             <img
@@ -131,7 +124,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              className="block text-base text-white"
+              className="block text-base text-white cursor-pointer hover:text-neutralDGrey"
               onClick={() => handleLinkClick(link, path)}
             >
               {link}

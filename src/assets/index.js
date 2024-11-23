@@ -18,6 +18,8 @@ import Ipsum from "./icons/ipsum.png";
 import Coding from "./icons/coding.png";
 import Immersive from "./icons/immersive.png";
 import Sosos from "./icons/sosos.png";
+//=====================PRODUCT=======================
+import Ex4 from "./blackprocess2.avif"
 
 export {
   SaleImageOne,
@@ -35,4 +37,5 @@ export {
   Coding,
   Immersive,
   Sosos,
+  Ex4
 };

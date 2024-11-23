@@ -27,11 +27,11 @@ function SharingContact() {
   };
 
   return (
-    <div class="fixed bottom-5 right-5 z-50 flex flex-col items-center space-y-4">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center space-y-4">
       <button
         onClick={scrollToTop}
         href="#"
-        class={`flex items-center justify-center w-12 h-12 bg-neutralGrey text-white rounded-full shadow-md hover:bg-brandPrimary focus:ring-2 transition ${
+        className={`flex items-center justify-center w-11 h-11 bg-neutralGrey text-white rounded-full shadow-md hover:bg-brandPrimary focus:ring-2 transition ${
           isVisible ? "flex" : "hidden"
         } `}
         title="Lên đầu trang"
@@ -52,31 +52,32 @@ function SharingContact() {
         </svg>
       </button>
 
-      <ul class="space-y-4">
+      <ul className="space-y-4">
         <li>
           <a
             href="tel:0383300680"
             rel="nofollow"
-            class="group flex flex-col items-center"
+            className="group flex flex-col items-center"
           >
             <img
               src="//bizweb.dktcdn.net/100/472/913/themes/888429/assets/addthis-phone.svg?1725935235961"
               alt="Gọi ngay cho chúng tôi"
-              class="w-11 h-11 rounded-full shadow-md transition-transform group-hover:scale-110"
+              className="w-11 h-11 rounded-full shadow-md transition-transform group-hover:scale-110"
             />
           </a>
         </li>
+        
         <li>
           <a
             href="https://zalo.me/0383300680"
             target="_blank"
             rel="nofollow"
-            class="group flex flex-col items-center"
+            className="group flex flex-col items-center"
           >
             <img
               src="//bizweb.dktcdn.net/100/472/913/themes/888429/assets/addthis-zalo.svg?1725935235961"
               alt="Chat với chúng tôi qua Zalo"
-              class="w-11 h-11 rounded-full shadow-md transition-transform group-hover:scale-110"
+              className="w-11 h-11 rounded-full shadow-md transition-transform group-hover:scale-110"
             />
           </a>
         </li>

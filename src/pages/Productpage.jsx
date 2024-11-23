@@ -1,11 +1,13 @@
-import React from "react";
-import Breadcrumb from "../components/breadcrumb";
+import React, { useEffect } from "react";
 import BlogList from "../components/BlogCard2";
 import NewLetter from "../components/NewLetter";
-import BreadcrumbComponent from "../components/breadcrumb";
-import Breadcrumbs from "../components/breadcrumb";
+import Breadcrumbs from "../components/Breadcrumb";
 
 function ProductPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <view>
       <Breadcrumbs />

@@ -1,5 +1,4 @@
 import React from "react";
-import coding from "../assets/blackExcavator.jfif";
 import ex1 from "../assets/blackProcess1.jpg";
 import ex2 from "../assets/blackprocess2.avif";
 import ex3 from "../assets/bw1.jpg";
@@ -10,19 +9,19 @@ import ex7 from "../assets/banner_2.png";
 import ex8 from "../assets/banner_3.png";
 import ex9 from "../assets/bw2.png";
 
-import {motion} from "framer-motion";
-import {fadeInFramer} from "../helper/fadeInFramer.js";
+import { motion } from "framer-motion";
+import { fadeInFramer } from "../helper/fadeInFramer.js";
 
-const BlogCard = ({date, month, title, description, src}) => {
+const BlogCard = ({ date, month, title, description, src }) => {
   return (
-    <div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all duration-100 md:h-112 h-autp">
+    <div className="bg-white shadow-lg hover:shadow-2xl rounded-lg overflow-hidden transition-all duration-100 md:h-112">
       <div className="relative">
         <img
           src={src}
-          className="w-full h-24 sm:h-32 md:h-64 lg:h-112 object-cover"
+          className="w-full h-24 sm:h-32 md:h-64 lg:h-100 object-cover"
           alt="Example"
         />
-        <div className="absolute top-2 left-2 bg-blue-600 text-white rounded-md px-1 py-1 sm:px-3 sm:py-2 shadow-md">
+        <div className="absolute top-2 left-2 bg-brandPrimary text-white rounded-md px-1 py-1 sm:px-3 sm:py-2 shadow-md">
           <p className="text-xs font-bold">{date}</p>
           <p className="text-xs">{month}</p>
         </div>
@@ -236,16 +235,13 @@ const BlogList = () => {
   ];
 
   return (
-    <div
-      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto"
-      id="products"
-    >
+    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto">
       <motion.div
         className="text-center md:w-1/2 mx-auto"
         variants={fadeInFramer("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{once: true, amount: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <h2 className="text-4xl font-semibold text-neutralDGrey mb-4">
           Các Loại Máy Xúc.

@@ -6,6 +6,7 @@ import HomePage from "./pages/Homepage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductPage from "./pages/Productpage";
 import SharingContact from "./components/SharingContact";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductPage />} />
         <Route path="/blog" element={<></>} />
-        <Route path="/contact" element={<></>} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* Route cho trang lỗi */}
         <Route path="*" element={<NotFoundPage />} />

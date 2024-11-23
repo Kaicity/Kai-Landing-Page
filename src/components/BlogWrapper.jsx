@@ -30,9 +30,7 @@ function BlogWrapper() {
                 </h2>
                 <p className="text-neutralGrey text-sm md:w-3/4 mb-8 mx-auto">
                     Máy xúc là một trong những thiết bị không thể thiếu trong ngành xây
-                    dựng hiện đại. Với khả năng đào, xúc và di chuyển đất đá, máy xúc giúp
-                    tăng cường hiệu quả công việc và giảm bớt sức lao động của con người.
-                    Các dòng máy xúc hiện đại ngày nay.
+                    dựng hiện đại.
                 </p>
             </motion.div>
 
