@@ -237,7 +237,7 @@ const BlogList = () => {
 
   return (
     <div
-      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto my-24 "
+      className="px-4 sm:px-8 lg:px-14 max-w-screen-2xl mx-auto"
       id="products"
     >
       <motion.div

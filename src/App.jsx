@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import HomePage from "./pages/Homepage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductPage from "./pages/Productpage";
+import SharingContact from "./components/SharingContact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         {/* Route cho trang lỗi */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <SharingContact />
       <Footer />
     </Router>
   );
