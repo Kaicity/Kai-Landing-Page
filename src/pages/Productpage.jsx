@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import BlogList from "../components/BlogCard2";
 import NewLetter from "../components/NewLetter";
-import Breadcrumbs from "../components/Breadcrumb";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function ProductPage() {
   useEffect(() => {
@@ -9,12 +9,12 @@ function ProductPage() {
   }, []);
 
   return (
-    <view>
+    <div>
       <Breadcrumbs />
       <BlogList />
       <br />
       <NewLetter />
-    </view>
+    </div>
   );
 }
 
