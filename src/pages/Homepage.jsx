@@ -14,6 +14,7 @@ import TestimonialCard from "../components/TestimonialCard";
 import ProcessGrid from "../components/ProcessCard";
 import { excavators } from "../data";
 import { useNavigate } from "react-router-dom";
+import Video from "../components/Video";
 function HomePage() {
   const nagivate = useNavigate();
 
@@ -130,6 +131,7 @@ function HomePage() {
       <ProcessGrid />
       <BlogWrapper />
       <TestimonialCard imageSrc={TestimonialCardOne} />
+      <Video/>
       <NewLetter />
     </div>
   );
